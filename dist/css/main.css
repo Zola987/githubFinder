@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Space Mono', monospace; }
+
+body {
+  background: #141d2e;
+  font-size: 13px; }
+
+/* Mobile view  375 x 777 */
+.container {
+  max-width: 327px;
+  margin: auto; }
+  .container .header {
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 31px 0; }
+    .container .header h1 {
+      color: #fefefe;
+      font-size: 26px; }
+    .container .header p {
+      color: #fefefe; }
+    .container .header #btn_mode {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .container .header #btn_mode #mode_text {
+        font-size: 13px;
+        letter-spacing: 2.5px;
+        margin-left: -13px; }
+      .container .header #btn_mode .icon-container {
+        margin-left: 13px; }
+  .container .searchbar_container {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e2a47;
+    border-radius: 15px;
+    background-image: url(icon-search.svg);
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    margin-bottom: 15px; }
+    .container .searchbar_container #input {
+      border: none;
+      width: 100%;
+      outline: none;
+      background: none;
+      height: 100%;
+      padding-left: 50px; }
+      .container .searchbar_container #input::placeholder {
+        letter-spacing: -0.7px;
+        font-size: 13px; }
+    .container .searchbar_container label {
+      flex: 1; }
+    .container .searchbar_container .btn_search {
+      cursor: pointer;
+      outline: none;
+      background: #0079ff;
+      border: none;
+      border-radius: 10px;
+      margin-right: 5px;
+      color: #fefefe;
+      width: 84px;
+      height: 46px;
+      font-size: 14px;
+      font-weight: 700; }
+      .container .searchbar_container .btn_search:hover {
+        background: #60abff; }
+  .container .profile_container {
+    margin-top: 30px;
+    height: 517px;
+    background: #1e2a47;
+    border-radius: 15px; }
+    .container .profile_container .profile_content {
+      width: 280px;
+      height: 437px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .container .profile_container .profile_content #user {
+        color: #0079ff; }
+      .container .profile_container .profile_content #bio {
+        margin-top: 28px;
+        color: #fefefe;
+        font-size: 13px; }
+      .container .profile_container .profile_content .profile_header {
+        height: 75px;
+        max-width: 280px;
+        margin: 50px 0 0;
+        display: flex; }
+        .container .profile_container .profile_content .profile_header #avatar {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%; }
+        .container .profile_container .profile_content .profile_header .profile_info {
+          color: #fefefe;
+          max-width: 145px;
+          height: 69px;
+          margin-left: 20px; }
+          .container .profile_container .profile_content .profile_header .profile_info h2 {
+            font-size: 16px;
+            font-weight: bold; }
+          .container .profile_container .profile_content .profile_header .profile_info p {
+            font-size: 13px; }
+      .container .profile_container .profile_content .profile_stats_container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 85px;
+        background: #141d2f;
+        color: #fefefe;
+        margin-top: 25px;
+        border-radius: 15px;
+        text-align: center; }
+        .container .profile_container .profile_content .profile_stats_container .profile_stat {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 85px; }
+          .container .profile_container .profile_content .profile_stats_container .profile_stat .stat_title {
+            font-size: 11px; }
+          .container .profile_container .profile_content .profile_stats_container .profile_stat .stat_value {
+            font-size: 16px;
+            font-weight: 700; }
+      .container .profile_container .profile_content .profile_footer {
+        color: #fefefe;
+        height: 127px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 25px; }
+        .container .profile_container .profile_content .profile_footer .profile_info {
+          display: flex; }
+          .container .profile_container .profile_content .profile_footer .profile_info #twitter {
+            opacity: 0.5; }
+          .container .profile_container .profile_content .profile_footer .profile_info #page:hover {
+            cursor: pointer;
+            text-decoration: underline; }
+          .container .profile_container .profile_content .profile_footer .profile_info .bottom_icons {
+            margin-bottom: 8px; }
+          .container .profile_container .profile_content .profile_footer .profile_info p {
+            font-size: 13px;
+            margin-left: 20px; }
+
+/* Tablet view  768 x 1024 */
+@media (min-width: 768px) {
+  body {
+    font-size: 15px; }
+  .container {
+    margin-top: 121px;
+    max-width: 573px; }
+    .container .profile_container {
+      margin-top: 24px;
+      max-height: 468px; }
+      .container .profile_container .profile_content {
+        width: 493px; }
+        .container .profile_container .profile_content .profile_header {
+          max-width: 354px;
+          justify-content: center;
+          margin-left: -25px;
+          margin-bottom: 15px; }
+          .container .profile_container .profile_content .profile_header h2 {
+            margin-bottom: 10px;
+            font-size: 26px;
+            font-weight: 700; }
+          .container .profile_container .profile_content .profile_header #user {
+            margin-bottom: 5px; }
+          .container .profile_container .profile_content .profile_header img {
+            margin-right: 20px;
+            margin-top: -13px;
+            min-height: 113px;
+            min-width: 117px; }
+        .container .profile_container .profile_content #bio {
+          padding-left: 10px;
+          font-size: 13px; }
+      .container .profile_container .profile_footer {
+        flex-direction: row;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        max-height: 80px; } }
+
+/* Desktop view 1440 x 900 */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 730px;
+    max-height: 611px; }
+    .container .profile_container {
+      margin-top: 0;
+      max-height: 444px;
+      padding-top: 35px; }
+      .container .profile_container .profile_content {
+        margin-left: 132px;
+        max-width: 550px;
+        min-width: 550px;
+        min-height: 350px;
+        max-height: 350px; }
+        .container .profile_container .profile_content .profile_header {
+          margin-left: -90px;
+          margin-top: 0px;
+          position: relative;
+          right: 155px;
+          max-height: 40px;
+          min-width: 625px; }
+          .container .profile_container .profile_content .profile_header .profile_name {
+            min-height: 100px;
+            justify-content: flex-start; }
+          .container .profile_container .profile_content .profile_header #date {
+            min-width: 166px;
+            max-width: 166px;
+            margin-left: 336px;
+            margin-top: -100px; }
+          .container .profile_container .profile_content .profile_header h2 {
+            font-size: 26px;
+            font-weight: 700; }
+          .container .profile_container .profile_content .profile_header img {
+            margin-right: 20px;
+            width: 117px;
+            height: 117px; }
+      .container .profile_container #bio {
+        margin-left: 68px; }
+      .container .profile_container .profile_stats_container {
+        margin-left: 68px; }
+      .container .profile_container .profile_footer {
+        margin-left: 68px; } }
