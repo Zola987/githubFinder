@@ -8,10 +8,8 @@ let darkMode = false;
 
 btnMode.addEventListener('click', function () {
     if (darkMode === false) {
-        // console.log('yes')
         darkModeSet();
     } else {
-        // console.log('no')
         lightModeSet();
     }
 });
@@ -19,10 +17,10 @@ btnMode.addEventListener('click', function () {
 // Dark Mode
 
 function darkModeSet() {
-    darkMode = true;
     document.body.style.backgroundColor = '#141D2F';
     document.querySelector('.title').style.color = '#fefefe';
     document.getElementById('mode_text').style.color = '#fefefe';
+    document.getElementById('input').style.color = '#fefefe';
     document.getElementById('name').style.color = '#fefefe';
     document.getElementById('date').style.color = '#fefefe';
     document.getElementById('searchbar_container').style.backgroundColor =
@@ -49,9 +47,9 @@ function lightModeSet() {
     document.getElementById('mode_text').style.color = '#4b6a9b';
     document.querySelector('.searchbar_container').style.backgroundColor =
         '#fefefe';
-
     document.querySelector('.profile_container').style.backgroundColor =
         '#fefefe';
+    document.getElementById('input').style.color = '#222731';
     document.getElementById('bio').style.color = '#4b6a9b';
     document.querySelector('#name').style.color = '#2b3442';
     document.querySelector('#user').style.color = '#0079FF';
@@ -62,7 +60,6 @@ function lightModeSet() {
     document.querySelector('.profile_footer ').style.color = '#4b6a9b';
 
     mode_icon.src = './assets/icon-moon.svg';
-
     darkMode = false;
     modeText.innerText = 'DARK';
 }

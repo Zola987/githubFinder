@@ -28,8 +28,10 @@ body {
       cursor: pointer;
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      outline: none; }
       .container .header #btn_mode #mode_text {
+        outline: none;
         font-size: 13px;
         letter-spacing: 2.5px;
         margin-left: -13px; }
@@ -41,15 +43,21 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #1e2a47;
+    color: #fefefe;
     border-radius: 15px;
     background-image: url(icon-search.svg);
     background-repeat: no-repeat;
     background-position-x: 15px;
     background-position-y: center;
     margin-bottom: 15px; }
+    .container .searchbar_container #no_result {
+      color: red;
+      font-weight: bold;
+      margin-right: 26px; }
     .container .searchbar_container #input {
       border: none;
       width: 100%;
+      color: #fefefe;
       outline: none;
       background: none;
       height: 100%;

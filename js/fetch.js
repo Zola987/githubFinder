@@ -5,6 +5,7 @@ const profileContainer = document.querySelector('.profile_container');
 
 let submitBtn = document.getElementById('submit');
 let input = document.getElementById('input');
+let noResult = document.getElementById('no_result');
 
 // submit button
 
@@ -16,18 +17,20 @@ submitBtn.addEventListener('click', () => {
 
 // Enter button
 
-input.addEventListener('keydown', (e) => {
-    if (!e) {
-        let e = window.event;
-    }
-    if (e.key == 'Enter') {
-        if (input.value !== '') {
-            fetchGit(url + input.value);
+input.addEventListener(
+    'keydown',
+    (e) => {
+        if (!e) {
+            let e = window.event;
         }
-    }
-});
-
-// let noResult
+        if (e.key == 'Enter') {
+            if (input.value !== '') {
+                fetchGit(url + input.value);
+            }
+        }
+    },
+    false,
+);
 
 //Profile Container
 let avatar = document.getElementById('avatar');
@@ -66,7 +69,10 @@ let company = document.getElementById('company');
 // URL
 const url = 'https://api.github.com/users/';
 
-//Fetch
+// Octacat
+fetchGit(url + 'octocat');
+
+// Fetch
 
 function fetchGit(git) {
     fetch(git)
@@ -81,7 +87,7 @@ function fetchGit(git) {
 
 function profileUpdate(data) {
     if (data.message !== 'Not Found') {
-        // noResult.style.display = 'none'
+        noResult.style.display = 'none';
         function checkNull(paramOne, paramTwo) {
             if (paramOne === '' || paramOne === null) {
                 paramTwo.style.opacity = 0.5;
