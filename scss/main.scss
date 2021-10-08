@@ -25,327 +25,328 @@ body {
     @media only screen and (min-width: 1400px) {
         font-size: 15px;
     }
-}
-.container {
-    max-width: 327px;
-    margin: auto;
 
-    @media only screen and (min-width: 768px) {
-        margin-top: 121px;
-        max-width: 573px;
-    }
-    @media only screen and (min-width: 1400px) {
-        max-width: 730px;
-        max-height: 611px;
-    }
+    .container {
+        max-width: 327px;
+        margin: auto;
 
-    .header {
-        height: 38px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 31px 0;
-
-        h1 {
-            color: $white;
-            font-size: 26px;
+        @media only screen and (min-width: 768px) {
+            margin-top: 121px;
+            max-width: 573px;
+        }
+        @media only screen and (min-width: 1400px) {
+            max-width: 730px;
+            max-height: 611px;
         }
 
-        p {
-            color: $white;
-        }
-
-        #btn_mode {
-            cursor: pointer;
+        .header {
+            height: 38px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            outline: none;
+            margin: 31px 0;
 
-            #mode_text {
-                outline: none;
-                font-size: 13px;
-                letter-spacing: 2.5px;
-                margin-left: -13px;
-            }
-
-            .icon-container {
-                margin-left: 13px;
-            }
-        }
-    }
-
-    .searchbar_container {
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #1e2a47;
-        color: $white;
-        border-radius: 15px;
-        background-image: url(icon-search.svg);
-        background-repeat: no-repeat;
-        background-position-x: 15px;
-        background-position-y: center;
-        margin-bottom: 15px;
-
-        #no_result {
-            color: red;
-            font-weight: bold;
-            margin-right: 26px;
-        }
-
-        #input {
-            border: none;
-            width: 100%;
-            color: $white;
-            outline: none;
-            background: none;
-            height: 100%;
-            padding-left: 50px;
-
-            &::placeholder {
-                letter-spacing: -0.7px;
-                font-size: 13px;
-            }
-        }
-
-        label {
-            flex: 1;
-        }
-
-        .btn_search {
-            cursor: pointer;
-            outline: none;
-            background: $blue;
-            border: none;
-            border-radius: 10px;
-            margin-right: 5px;
-            color: $white;
-            width: 84px;
-            height: 46px;
-            font-size: 14px;
-            font-weight: 700;
-
-            &:hover {
-                background: #60abff;
-            }
-        }
-    }
-
-    .profile_container {
-        margin-top: 30px;
-        height: 517px;
-        background: #1e2a47;
-        border-radius: 15px;
-
-        @media only screen and (min-width: 768px) {
-            margin-top: 24px;
-            max-height: 468px;
-        }
-        @media only screen and (min-width: 1400px) {
-            margin-top: 0;
-            max-height: 444px;
-            padding-top: 35px;
-        }
-
-        .profile_content {
-            width: 280px;
-            height: 437px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-
-            @media only screen and (min-width: 768px) {
-                width: 493px;
-            }
-            @media only screen and (min-width: 1400px) {
-                margin-left: 132px;
-                max-width: 550px;
-                min-width: 550px;
-                min-height: 350px;
-                max-height: 350px;
-            }
-
-            #user {
-                color: $blue;
-
-                @media only screen and (min-width: 768px) {
-                    margin-bottom: 5px;
-                }
-            }
-
-            #date {
-                @media only screen and (min-width: 1400px) {
-                    min-width: 166px;
-                    max-width: 166px;
-                    margin-left: 336px;
-                    margin-top: -100px;
-                }
-            }
-
-            #bio {
-                margin-top: 28px;
+            h1 {
                 color: $white;
-                font-size: 13px;
+                font-size: 26px;
+            }
 
-                @media only screen and (min-width: 768px) {
-                    padding-left: 10px;
+            p {
+                color: $white;
+            }
+
+            #btn_mode {
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                outline: none;
+
+                #mode_text {
+                    outline: none;
+                    font-size: 13px;
+                    letter-spacing: 2.5px;
+                    margin-left: -13px;
+                }
+
+                .icon-container {
+                    margin-left: 13px;
+                }
+            }
+        }
+
+        .searchbar_container {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1e2a47;
+            color: $white;
+            border-radius: 15px;
+            background-image: url(icon-search.svg);
+            background-repeat: no-repeat;
+            background-position-x: 15px;
+            background-position-y: center;
+            margin-bottom: 15px;
+
+            #no_result {
+                color: red;
+                font-weight: bold;
+                margin-right: 26px;
+            }
+
+            #input {
+                border: none;
+                width: 100%;
+                color: $white;
+                outline: none;
+                background: none;
+                height: 100%;
+                padding-left: 50px;
+
+                &::placeholder {
+                    letter-spacing: -0.7px;
                     font-size: 13px;
                 }
-                @media only screen and (min-width: 1400px) {
-                    margin-left: 68px;
-                }
             }
 
-            .profile_header {
-                height: 75px;
-                max-width: 280px;
-                margin: 50px 0 0;
-                display: flex;
-
-                @media only screen and (min-width: 768px) {
-                    max-width: 354px;
-                    justify-content: center;
-                    margin-left: -25px;
-                    margin-bottom: 15px;
-                }
-                @media only screen and (min-width: 1400px) {
-                    margin-left: -90px;
-                    margin-top: 0px;
-                    position: relative;
-                    right: 155px;
-                    max-height: 40px;
-                    min-width: 625px;
-                }
-
-                #avatar {
-                    height: 70px;
-                    width: 70px;
-                    border-radius: 50%;
-
-                    @media only screen and (min-width: 768px) {
-                        margin-right: 20px;
-                        margin-top: -13px;
-                        min-height: 113px;
-                        min-width: 117px;
-                    }
-
-                    @media only screen and (min-width: 1400px) {
-                        margin-right: 20px;
-                        width: 117px;
-                        height: 117px;
-                    }
-                }
-
-                .profile_info {
-                    color: $white;
-                    max-width: 145px;
-                    height: 69px;
-                    margin-left: 20px;
-
-                    @media only screen and (min-width: 768px) {
-                        margin-top: -5px;
-                    }
-
-                    .profile_name {
-                        @media only screen and (min-width: 1400px) {
-                            min-height: 100px;
-                            justify-content: flex-start;
-                        }
-                    }
-
-                    h2 {
-                        font-size: 16px;
-                        font-weight: bold;
-
-                        @media only screen and (min-width: 768px) {
-                            margin-bottom: 10px;
-                            min-width: 176px;
-                            font-size: 26px;
-                            font-weight: 700;
-                        }
-                        @media only screen and (min-width: 1400px) {
-                            font-size: 26px;
-                            font-weight: 700;
-                        }
-                    }
-
-                    p {
-                        font-size: 13px;
-                    }
-                }
+            label {
+                flex: 1;
             }
 
-            .profile_stats_container {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                min-height: 85px;
-                background: #141d2f;
+            .btn_search {
+                cursor: pointer;
+                outline: none;
+                background: $blue;
+                border: none;
+                border-radius: 10px;
+                margin-right: 5px;
                 color: $white;
-                margin-top: 25px;
-                border-radius: 15px;
-                text-align: center;
+                width: 84px;
+                height: 46px;
+                font-size: 14px;
+                font-weight: 700;
 
-                @media only screen and (min-width: 1400px) {
-                    margin-left: 68px;
-                }
-
-                .profile_stat {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    height: 85px;
-
-                    .stat_title {
-                        font-size: 11px;
-                    }
-
-                    .stat_value {
-                        font-size: 16px;
-                        font-weight: 700;
-                    }
+                &:hover {
+                    background: #60abff;
                 }
             }
+        }
 
-            .profile_footer {
-                color: $white;
-                height: 127px;
+        .profile_container {
+            margin-top: 30px;
+            height: 517px;
+            background: #1e2a47;
+            border-radius: 15px;
+
+            @media only screen and (min-width: 768px) {
+                margin-top: 24px;
+                max-height: 468px;
+            }
+            @media only screen and (min-width: 1400px) {
+                margin-top: 0;
+                max-height: 444px;
+                padding-top: 35px;
+            }
+
+            .profile_content {
+                width: 280px;
+                height: 437px;
+                margin: auto;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                margin-top: 25px;
+                justify-content: space-evenly;
 
                 @media only screen and (min-width: 768px) {
-                    flex-direction: row;
-                    flex-flow: column wrap;
-                    justify-content: space-between;
-                    max-height: 80px;
+                    width: 493px;
                 }
                 @media only screen and (min-width: 1400px) {
-                    margin-left: 68px;
+                    margin-left: 132px;
+                    max-width: 550px;
+                    min-width: 550px;
+                    min-height: 350px;
+                    max-height: 350px;
                 }
 
-                .profile_info {
+                #user {
+                    color: $blue;
+
+                    @media only screen and (min-width: 768px) {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                #date {
+                    @media only screen and (min-width: 1400px) {
+                        min-width: 166px;
+                        max-width: 166px;
+                        margin-left: 336px;
+                        margin-top: -100px;
+                    }
+                }
+
+                #bio {
+                    margin-top: 28px;
+                    color: $white;
+                    font-size: 13px;
+
+                    @media only screen and (min-width: 768px) {
+                        padding-left: 10px;
+                        font-size: 13px;
+                    }
+                    @media only screen and (min-width: 1400px) {
+                        margin-left: 68px;
+                    }
+                }
+
+                .profile_header {
+                    height: 75px;
+                    max-width: 280px;
+                    margin: 50px 0 0;
                     display: flex;
 
-                    #twitter {
-                        opacity: 0.5;
+                    @media only screen and (min-width: 768px) {
+                        max-width: 354px;
+                        justify-content: center;
+                        margin-left: -25px;
+                        margin-bottom: 15px;
+                    }
+                    @media only screen and (min-width: 1400px) {
+                        margin-left: -90px;
+                        margin-top: 0px;
+                        position: relative;
+                        right: 155px;
+                        max-height: 40px;
+                        min-width: 625px;
                     }
 
-                    #page:hover {
-                        cursor: pointer;
-                        text-decoration: underline;
+                    #avatar {
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+
+                        @media only screen and (min-width: 768px) {
+                            margin-right: 20px;
+                            margin-top: -13px;
+                            min-height: 113px;
+                            min-width: 117px;
+                        }
+
+                        @media only screen and (min-width: 1400px) {
+                            margin-right: 20px;
+                            width: 117px;
+                            height: 117px;
+                        }
                     }
-                    .bottom_icons {
-                        margin-bottom: 8px;
-                    }
-                    p {
-                        font-size: 13px;
+
+                    .profile_info {
+                        color: $white;
+                        max-width: 145px;
+                        height: 69px;
                         margin-left: 20px;
+
+                        @media only screen and (min-width: 768px) {
+                            margin-top: -5px;
+                        }
+
+                        .profile_name {
+                            @media only screen and (min-width: 1400px) {
+                                min-height: 100px;
+                                justify-content: flex-start;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 16px;
+                            font-weight: bold;
+
+                            @media only screen and (min-width: 768px) {
+                                margin-bottom: 10px;
+                                min-width: 176px;
+                                font-size: 26px;
+                                font-weight: 700;
+                            }
+                            @media only screen and (min-width: 1400px) {
+                                font-size: 26px;
+                                font-weight: 700;
+                            }
+                        }
+
+                        p {
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .profile_stats_container {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    min-height: 85px;
+                    background: #141d2f;
+                    color: $white;
+                    margin-top: 25px;
+                    border-radius: 15px;
+                    text-align: center;
+
+                    @media only screen and (min-width: 1400px) {
+                        margin-left: 68px;
+                    }
+
+                    .profile_stat {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        height: 85px;
+
+                        .stat_title {
+                            font-size: 11px;
+                        }
+
+                        .stat_value {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .profile_footer {
+                    color: $white;
+                    height: 127px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-top: 25px;
+
+                    @media only screen and (min-width: 768px) {
+                        flex-direction: row;
+                        flex-flow: column wrap;
+                        justify-content: space-between;
+                        max-height: 80px;
+                    }
+                    @media only screen and (min-width: 1400px) {
+                        margin-left: 68px;
+                    }
+
+                    .profile_info {
+                        display: flex;
+
+                        #twitter {
+                            opacity: 0.5;
+                        }
+
+                        #page:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                        .bottom_icons {
+                            margin-bottom: 8px;
+                        }
+                        p {
+                            font-size: 13px;
+                            margin-left: 20px;
+                        }
                     }
                 }
             }

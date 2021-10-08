@@ -3,9 +3,9 @@ const profileContainer = document.querySelector('.profile_container');
 
 //Search Bar
 
-let submitBtn = document.getElementById('submit');
-let input = document.getElementById('input');
-let noResult = document.getElementById('no_result');
+const submitBtn = document.getElementById('submit');
+const input = document.getElementById('input');
+const noResult = document.getElementById('no_result');
 
 // submit button
 
@@ -33,11 +33,11 @@ input.addEventListener(
 );
 
 //Profile Container
-let avatar = document.getElementById('avatar');
-let userName = document.getElementById('name');
-let user = document.getElementById('user');
-let date = document.getElementById('date');
-let months = [
+const avatar = document.getElementById('avatar');
+const userName = document.getElementById('name');
+const user = document.getElementById('user');
+const date = document.getElementById('date');
+const months = [
     'Jan',
     'Feb',
     'Mar',
@@ -51,20 +51,20 @@ let months = [
     'Nov',
     'Dec',
 ];
-let bio = document.getElementById('bio');
+const bio = document.getElementById('bio');
 
 // Stats
 
-let repos = document.getElementById('repos');
-let followers = document.getElementById('followers');
-let following = document.getElementById('following');
+const repos = document.getElementById('repos');
+const followers = document.getElementById('followers');
+const following = document.getElementById('following');
 
 // Footer
 
-let loc = document.getElementById('location');
-let page = document.getElementById('page');
-let twitter = document.getElementById('twitter');
-let company = document.getElementById('company');
+const loc = document.getElementById('location');
+const page = document.getElementById('page');
+const twitter = document.getElementById('twitter');
+const company = document.getElementById('company');
 
 // URL
 const url = 'https://api.github.com/users/';
@@ -90,8 +90,8 @@ function profileUpdate(data) {
         noResult.style.display = 'none';
         function checkNull(paramOne, paramTwo) {
             if (paramOne === '' || paramOne === null) {
-                paramTwo.style.opacity = 0.5;
-                paramTwo.previousElementSibling.style.opacity = 0.5;
+                paramTwo.style.opacity = 1;
+                paramTwo.previousElementSibling.style.opacity = 1;
                 return 'Not available';
             } else {
                 return `${paramOne}`;
