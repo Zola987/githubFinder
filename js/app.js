@@ -8,11 +8,11 @@ const body = document.querySelector('body');
 btnMode.addEventListener('click', (e) => {
     if (body.classList.value === 'light') {
         body.classList.remove('light');
-        modeText.innerHTML = 'DARK';
-        modeIcon.src = './assets/icon-moon.svg';
-    } else {
-        body.classList.add('light');
         modeText.innerHTML = 'LIGHT';
         modeIcon.src = './assets/icon-sun.svg';
+    } else {
+        body.classList.add('light');
+        modeText.innerHTML = 'DARK';
+        modeIcon.src = './assets/icon-moon.svg';
     }
 });

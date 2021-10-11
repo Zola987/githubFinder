@@ -78,6 +78,7 @@ function fetchGit(git) {
     fetch(git)
         .then((response) => response.json())
         .then((data) => {
+            console.log(data);
             profileUpdate(data);
         })
         .catch((error) => {
@@ -112,7 +113,7 @@ function profileUpdate(data) {
         followers.innerText = `${data.followers}`;
         following.innerText = `${data.following}`;
         loc.innerText = checkNull(data.location, loc);
-        page.innerText = checkNull(data.blog, page);
+        page.innerText = checkNull(data.html_url, page);
         twitter.innerText = checkNull(data.twitter_username, twitter);
         company.innerText = checkNull(data.company, company);
         searchBar.classList.toggle('active');

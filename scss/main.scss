@@ -67,10 +67,18 @@ body {
                     font-size: 13px;
                     letter-spacing: 2.5px;
                     margin-left: -13px;
+
+                    &:hover {
+                        color: #90a4d4;
+                    }
                 }
 
                 .icon-container {
                     margin-left: 13px;
+
+                    &:hover {
+                        color: $black;
+                    }
                 }
             }
         }
@@ -193,9 +201,11 @@ body {
                     @media only screen and (min-width: 768px) {
                         padding-left: 10px;
                         font-size: 13px;
+                        margin-top: 70px;
                     }
                     @media only screen and (min-width: 1400px) {
                         margin-left: 68px;
+                        margin-top: 60px;
                     }
                 }
 
@@ -358,57 +368,95 @@ body {
 
 .light {
     background: $lightGrey;
-    body {
-        transition: ease-in 0.3s;
-        .container {
-            h1 {
-                color: $black;
-            }
+    transition: ease-in 0.3s;
+    .container {
+        h1 {
+            color: $black;
+        }
 
+        .header {
             .title {
                 color: $black;
             }
 
             #mode_text {
                 color: $blueFunny;
-            }
 
-            .searchbar_container {
-                background: $white;
+                &:hover {
+                    color: $black;
+                }
             }
+        }
 
-            .profile_container {
-                background: $white;
+        .searchbar_container {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $white;
+            color: $black;
+            border-radius: 15px;
+            background-image: url(icon-search.svg);
+            background-repeat: no-repeat;
+            background-position-x: 15px;
+            background-position-y: center;
+            margin-bottom: 15px;
+            #no_result {
+                color: red;
+                font-weight: bold;
+                margin-right: 26px;
             }
 
             #input {
+                border: none;
+                width: 100%;
                 color: $black;
+                outline: none;
+                background: none;
+                height: 100%;
+                padding-left: 50px;
+
+                &::placeholder {
+                    letter-spacing: -0.7px;
+                    font-size: 13px;
+                }
             }
 
+            label {
+                flex: 1;
+            }
+        }
+
+        .profile_container {
+            background: $white;
             #bio {
-                color: $blueFunny;
+                color: $blueFunny !important;
             }
+        }
 
-            #name {
-                color: $darkGrey;
-            }
+        #input {
+            color: $black;
+        }
 
-            #user {
-                color: $blue;
-            }
+        #name {
+            color: $darkGrey;
+        }
 
-            #date {
-                color: $grey;
-            }
+        #user {
+            color: $blue;
+        }
 
-            .profile_stats_container {
-                background: $lightGrey;
-                color: $darkGrey;
-            }
+        #date {
+            color: $grey;
+        }
 
-            .profile_footer {
-                color: $blueFunny;
-            }
+        .profile_stats_container {
+            background: $lightGrey !important;
+            color: $darkGrey !important;
+        }
+
+        .profile_footer {
+            color: $blueFunny !important;
         }
     }
 }

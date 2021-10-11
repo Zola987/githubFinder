@@ -47,8 +47,12 @@ body {
           font-size: 13px;
           letter-spacing: 2.5px;
           margin-left: -13px; }
+          body .container .header #btn_mode #mode_text:hover {
+            color: #90a4d4; }
         body .container .header #btn_mode .icon-container {
           margin-left: 13px; }
+          body .container .header #btn_mode .icon-container:hover {
+            color: #141d2e; }
     body .container .searchbar_container {
       height: 60px;
       display: flex;
@@ -142,10 +146,12 @@ body {
           @media only screen and (min-width: 768px) {
             body .container .profile_container .profile_content #bio {
               padding-left: 10px;
-              font-size: 13px; } }
+              font-size: 13px;
+              margin-top: 70px; } }
           @media only screen and (min-width: 1400px) {
             body .container .profile_container .profile_content #bio {
-              margin-left: 68px; } }
+              margin-left: 68px;
+              margin-top: 60px; } }
         body .container .profile_container .profile_content .profile_header {
           height: 75px;
           max-width: 280px;
@@ -261,31 +267,60 @@ body {
               margin-left: 20px; }
 
 .light {
-  background: #f6f8ff; }
-  .light body {
-    transition: ease-in 0.3s; }
-    .light body .container h1 {
+  background: #f6f8ff;
+  transition: ease-in 0.3s; }
+  .light .container h1 {
+    color: #141d2e; }
+  .light .container .header .title {
+    color: #141d2e; }
+  .light .container .header #mode_text {
+    color: #4b6a9b; }
+    .light .container .header #mode_text:hover {
       color: #141d2e; }
-    .light body .container .title {
-      color: #141d2e; }
-    .light body .container #mode_text {
-      color: #4b6a9b; }
-    .light body .container .searchbar_container {
-      background: #fefefe; }
-    .light body .container .profile_container {
-      background: #fefefe; }
-    .light body .container #input {
-      color: #141d2e; }
-    .light body .container #bio {
-      color: #4b6a9b; }
-    .light body .container #name {
-      color: #2b3442; }
-    .light body .container #user {
-      color: #0079ff; }
-    .light body .container #date {
-      color: #697c9a; }
-    .light body .container .profile_stats_container {
-      background: #f6f8ff;
-      color: #2b3442; }
-    .light body .container .profile_footer {
-      color: #4b6a9b; }
+  .light .container .searchbar_container {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fefefe;
+    color: #141d2e;
+    border-radius: 15px;
+    background-image: url(icon-search.svg);
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: center;
+    margin-bottom: 15px; }
+    .light .container .searchbar_container #no_result {
+      color: red;
+      font-weight: bold;
+      margin-right: 26px; }
+    .light .container .searchbar_container #input {
+      border: none;
+      width: 100%;
+      color: #141d2e;
+      outline: none;
+      background: none;
+      height: 100%;
+      padding-left: 50px; }
+      .light .container .searchbar_container #input::placeholder {
+        letter-spacing: -0.7px;
+        font-size: 13px; }
+    .light .container .searchbar_container label {
+      flex: 1; }
+  .light .container .profile_container {
+    background: #fefefe; }
+    .light .container .profile_container #bio {
+      color: #4b6a9b !important; }
+  .light .container #input {
+    color: #141d2e; }
+  .light .container #name {
+    color: #2b3442; }
+  .light .container #user {
+    color: #0079ff; }
+  .light .container #date {
+    color: #697c9a; }
+  .light .container .profile_stats_container {
+    background: #f6f8ff !important;
+    color: #2b3442 !important; }
+  .light .container .profile_footer {
+    color: #4b6a9b !important; }
